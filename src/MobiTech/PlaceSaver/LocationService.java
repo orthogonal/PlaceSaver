@@ -4,8 +4,11 @@
  */
 package MobiTech.PlaceSaver;
 
+import android.os.Binder;
+import android.os.IBinder;
+
 import android.app.Service;
-import android.os.Bundle;
+import android.content.Intent;
 
 /**
  *
@@ -20,20 +23,20 @@ public class LocationService extends Service {
 
     /** Called when the service is started. **/
     @Override
-    public void onStartCommand(Intent intent, int flags, int startID) {
+    public int onStartCommand(Intent intent, int flags, int startID)
+    {
         return START_STICKY;
     }
 
     /** Called when the service is destroyed. **/
     @Override
-    public void onDestroy() {
+    public void onDestroy()
+    {
         //cancel everything
     }
-    private final mBinder  = new LocalBinder();
-
-    /** Called when the service is binded **/
-    @Override
-    public IBinder onBind(Intent intent) {
-        return mBinder;
+    
+    public IBinder onBind(Intent intent)
+    {
+        return new Binder();
     }
 }
