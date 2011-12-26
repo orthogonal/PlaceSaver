@@ -39,4 +39,24 @@ public class LocationService extends Service {
     {
         return new Binder();
     }
+    
+    /**
+     * Location CURRENT_LOCATION;
+     * 
+     * define LocationListener;
+     * 
+     * Location getLocation(){
+     *      #THIS WILL ALWAYS HAVE THE BEST ESTIMATE
+     *      return CURRENT_LOCATION;
+     *      }
+     * 
+     * void updateLocation(){
+     *      if(CURRENT_LOCATION is close enough to reminder){
+     *          replace cell tower listener with gps listener
+     *          }
+     *      CURRENT_LOCATION = listener.get();
+     *      }
+     *      
+     *      ()()()()()THIS PSUEDOCODE IS NOT COMPLETE()()()()()
+     */
 }
