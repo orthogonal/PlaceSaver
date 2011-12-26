@@ -16,6 +16,10 @@ import android.content.Intent;
  */
 public class LocationService extends Service {
 
+    //1 second in milliseconds
+    public static int TIME_INTERVAL = 1000;
+    
+    
     /** Called when the service is created. **/
     @Override
     public void onCreate() {        
@@ -40,6 +44,15 @@ public class LocationService extends Service {
         return new Binder();
     }
     
+    protected boolean isBetterLocation(Location currentBest, Location update)
+    {
+        if(currentBest == null)
+        {
+            return true;
+        }
+        
+        
+    }
     /**
      * Location CURRENT_LOCATION;
      * 
