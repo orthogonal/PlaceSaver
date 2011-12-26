@@ -46,12 +46,19 @@ public class LocationService extends Service {
     
     protected boolean isBetterLocation(Location currentBest, Location update)
     {
+        //if we don't have an old Location, let's take the new one.
         if(currentBest == null)
         {
             return true;
         }
         
+        //is the new Location significantly more recent?
+        boolean isNewer = (update.getTime() - currentBest.getTime()) >= TIME_INTERVAL/2;
         
+        //is the new Location significantly more accurate?
+        boolean isMoreAccurate = (update.getAccuracy() - currentBest.getTime()) >= 5;
+        
+        return isNewer && isMoreAccurate;
     }
     /**
      * Location CURRENT_LOCATION;
