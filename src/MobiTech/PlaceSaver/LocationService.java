@@ -9,6 +9,7 @@ import android.os.IBinder;
 
 import android.app.Service;
 import android.content.Intent;
+import android.location.*;
 
 /**
  *
@@ -18,7 +19,36 @@ public class LocationService extends Service {
 
     //1 second in milliseconds
     public static int TIME_INTERVAL = 1000;
+    //LocationManager for the entire class.
+    LocationManager locationManager = (LocationManager) this.getSystemService(Context.LOCATION_SERVICE);
+    //Global locatino provider.
+    LocationProvider locationProvider = locationManager.GPS_PROVIDER;
+    //Global Location state.
+    public static Location bestEstimate = new Location(locationProvider);
+
+    Location lastKnownLocation = locationManager.getLastKnownLocation(locationProvider);
     
+    // Define a listener that responds to location updates.
+    LocationListener locationListener = new LocationListener()
+    {
+        public void onLocationChanged(Location location)
+        {
+            // Called when a new location is found by the network location provider.
+            makeUseOfNewLocation(location);
+        }
+
+        public void onStatusChanged(String provider, int status, Bundle extras)
+        {
+        }
+
+        public void onProviderEnabled(String provider) 
+        {
+        }
+
+        public void onProviderDisabled(String provider) 
+        {
+        }
+    };
     
     /** Called when the service is created. **/
     @Override

@@ -11,7 +11,7 @@ import android.os.Bundle;
  *
  * @author Will
  */
-public class reminderService extends Service {
+public class ReminderService extends Service {
 
     /** Called when the service is created. **/
     @Override
