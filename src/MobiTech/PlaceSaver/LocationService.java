@@ -15,7 +15,8 @@ import android.location.*;
  *
  * @author Will
  */
-public class LocationService extends Service {
+public class LocationService extends Service
+{
 
     //1 second in milliseconds
     public static int TIME_INTERVAL = 1000;
