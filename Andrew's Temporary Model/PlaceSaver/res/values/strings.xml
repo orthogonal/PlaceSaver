@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <string name="app_name">PlaceSaver</string>
     <string name="title">PlaceSaver</string>
-    <string name="button_old">See Reminders</string>
-    <string name="button_new">New Reminder</string>
+    <string name="button_old">Manage Current Reminders</string>
+    <string name="button_new">Create New Reminder</string>
     <string name="button_help">Help</string>
     <string name="button_about">About</string>
+
 </resources>
