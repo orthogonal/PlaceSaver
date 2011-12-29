@@ -9,7 +9,7 @@
     <application
         android:icon="@drawable/bogart"
         android:label="@string/app_name" >
-        <!-- There are three folders - ldpi (36 x 36), mdpi (48) and hdpi (72).  Make an icon for each. -->
+        <!-- There are three folders - ldpi (36 x 36), mdpi (48 x 48) and hdpi (72 x 72).  Make an icon for each. -->
         <!-- The icon named "ic_launcher.png" in each folder will be used.  72 x 72 seems to be the most ubiquitous.-->
         <!-- Everything @string is a link to the corresponding value in the res/values/strings.xml file. ~Andrew -->
         <activity
@@ -20,6 +20,26 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".OldReminders" >
+            
+        </activity>
+        
+        <activity
+            android:name=".NewReminder" >
+            
+        </activity>
+        
+        <activity
+            android:name=".Help" >
+            
+        </activity>
+        
+        <activity
+            android:name=".About" >
+            
         </activity>
     </application>
 

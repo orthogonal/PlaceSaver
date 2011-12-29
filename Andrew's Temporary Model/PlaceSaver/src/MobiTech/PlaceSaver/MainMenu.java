@@ -34,12 +34,20 @@ public class MainMenu extends Activity implements OnClickListener{
     /**Called when something is clicked in this activity (I think) this checks the ID of what was clicked and does something.**/
     	switch (thisView.getId()) {
     	case R.id.mainOldButton:
+    		Intent go2Old = new Intent(this, OldReminders.class);
+    		startActivity(go2Old);
     		break;
     	case R.id.mainNewButton:
+    		Intent go2New = new Intent(this, NewReminder.class);
+    		startActivity(go2New);
     		break;
     	case R.id.mainHelpButton:
+    		Intent go2Help = new Intent(this, Help.class);
+    		startActivity(go2Help);
     		break;
     	case R.id.mainAboutButton:
+    		Intent go2About = new Intent(this, About.class);
+    		startActivity(go2About);
     		break;
     	}
     }

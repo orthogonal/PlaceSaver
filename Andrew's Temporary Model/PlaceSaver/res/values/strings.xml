@@ -7,5 +7,9 @@
     <string name="button_new">Create New Reminder</string>
     <string name="button_help">Help</string>
     <string name="button_about">About</string>
-
+    <string name="oldRemindersText">There\'s nothing here yet.  But if you had reminders there would be.</string>
+    <string name="newReminderText">This is a map, and you select places to put reminders.</string>
+    <string name="helpText">Nobody can help you now!</string>
+    <string name="aboutText">To find out more about this app, write your question on the back of a $20 bill and mail it to 11904 Carlton Rd.</string>
+    
 </resources>
