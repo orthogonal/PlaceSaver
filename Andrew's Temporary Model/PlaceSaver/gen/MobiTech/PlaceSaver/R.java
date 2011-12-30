@@ -18,23 +18,25 @@ public final class R {
         public static final int ic_launcher=0x7f020001;
     }
     public static final class id {
-        public static final int do_nothing=0x7f080007;
+        public static final int do_nothing=0x7f080008;
         public static final int mainAboutButton=0x7f080005;
         public static final int mainHelpButton=0x7f080004;
         public static final int mainMapButton=0x7f080001;
         public static final int mainNewButton=0x7f080003;
         public static final int mainOldButton=0x7f080002;
-        public static final int nothing_message=0x7f080006;
+        public static final int mapView=0x7f080006;
+        public static final int nothing_message=0x7f080007;
         public static final int oldRemindersText=0x7f080000;
-        public static final int options=0x7f080008;
+        public static final int options=0x7f080009;
     }
     public static final class layout {
         public static final int about=0x7f030000;
         public static final int help=0x7f030001;
         public static final int main=0x7f030002;
-        public static final int newreminder=0x7f030003;
-        public static final int nothing=0x7f030004;
-        public static final int oldreminders=0x7f030005;
+        public static final int maps=0x7f030003;
+        public static final int newreminder=0x7f030004;
+        public static final int nothing=0x7f030005;
+        public static final int oldreminders=0x7f030006;
     }
     public static final class menu {
         public static final int backmenu=0x7f070000;
