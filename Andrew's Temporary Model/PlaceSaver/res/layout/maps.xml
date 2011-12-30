@@ -12,4 +12,12 @@
         android:apiKey="01sfIhGsIQ8ttm0OP3jIxdrNT2dK87LMJWp8uLQ"
         />
  
+        <LinearLayout android:id="@+id/zoom" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:layout_alignParentBottom="true" 
+        android:layout_centerHorizontal="true" 
+        /> 
+        
+        
 </RelativeLayout>
