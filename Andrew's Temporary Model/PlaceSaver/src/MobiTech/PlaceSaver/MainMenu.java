@@ -24,12 +24,14 @@ public class MainMenu extends Activity implements OnClickListener{
         View newButton = findViewById(R.id.mainNewButton);
         View helpButton = findViewById(R.id.mainHelpButton);
         View aboutButton = findViewById(R.id.mainAboutButton);
+        View mapButton = findViewById(R.id.mainMapButton);
         
         /**  The next four lines are Java syntax to create click events for the elements identified above **/
         oldButton.setOnClickListener(this);
         newButton.setOnClickListener(this);
         helpButton.setOnClickListener(this);
         aboutButton.setOnClickListener(this);
+        mapButton.setOnClickListener(this);
     }
     
     @Override
@@ -78,6 +80,10 @@ public class MainMenu extends Activity implements OnClickListener{
     	case R.id.mainAboutButton:
     		Intent go2About = new Intent(this, About.class);
     		startActivity(go2About);
+    		break;
+    	case R.id.mainMapButton:
+    		Intent go2Map = new Intent(this, Maps1.class);
+    		startActivity(go2Map);
     		break;
     	}
     }

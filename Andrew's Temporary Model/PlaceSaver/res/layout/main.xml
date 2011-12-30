@@ -11,6 +11,13 @@
         android:gravity="center"
         android:text="@string/title" />
     
+    <Button
+        android:id="@+id/mainMapButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/button_map" />
+    
     <Button 
         android:id="@+id/mainOldButton"
         android:layout_width="fill_parent"

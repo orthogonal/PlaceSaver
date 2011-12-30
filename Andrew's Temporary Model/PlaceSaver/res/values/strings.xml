@@ -25,6 +25,7 @@
         <item>African Clicking Language</item>
     </string-array>
     <string name="optionsTitle">Options</string>
+    <string name="button_map">Anything Involving Google Maps</string>
     
     
 </resources>
