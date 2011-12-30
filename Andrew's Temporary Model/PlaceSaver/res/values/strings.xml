@@ -11,5 +11,8 @@
     <string name="newReminderText">This is a map, and you select places to put reminders.</string>
     <string name="helpText">Nobody can help you now!</string>
     <string name="aboutText">To find out more about this app, write your question on the back of a $20 bill and mail it to 11904 Carlton Rd.</string>
+    <string name="nothingText">41.346628,-74.001675</string>
+    <string name="doNothing">Coordinates of Secret Treasure</string>
+    <string name="doNothing_shortcut">Coords</string>
     
 </resources>

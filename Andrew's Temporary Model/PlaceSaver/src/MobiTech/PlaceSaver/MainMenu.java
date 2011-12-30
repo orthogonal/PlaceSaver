@@ -3,6 +3,9 @@ package MobiTech.PlaceSaver;
 import android.app.Activity;				//Required to make new activities (obviously required)
 import android.os.Bundle;					//The Bundle handles the information that was saved the last time the app paused/stopped.
 import android.content.Intent;				//Required to make an intent
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.MenuInflater;
 import android.view.View;					//So you can manipulate the graphics
 import android.view.View.OnClickListener;	//Required to make click events
 
@@ -29,6 +32,32 @@ public class MainMenu extends Activity implements OnClickListener{
         aboutButton.setOnClickListener(this);
     }
     
+    @Override
+	public boolean onCreateOptionsMenu(Menu m){
+		super.onCreateOptionsMenu(m);
+		MenuInflater x = getMenuInflater();
+		x.inflate(R.menu.backmenu, m);
+		m.findItem(R.id.do_nothing).setIntent(new Intent(this, Nothing.class));
+		return true;
+	}
+ /** The above is what happens when the "Menu" button on the Android is pressed.  First, call the super class.
+  * Then make an inflater to bring the menu up.  We inflate "backmenu" here, the menu defined in res/menu/backmenu.xml
+  * Note that I had to make the res/menu folder myself.  Then you set intents for each item on the menu.  Items are linked to
+  * via their id.  Finally, it's a boolean method (for some odd reason) so you have to return true.  More below...
+  */
+    
+	
+	@Override
+	public boolean onOptionsItemSelected(MenuItem x){
+		super.onOptionsItemSelected(x);
+		startActivity(x.getIntent());
+		return true;
+	}
+	
+	/** This method goes hand-in-hand with the onCreateOptionsMenu menu.  The item in the menu that you select is passed as an argument.
+	 * Then you call the superclass first (as always), and then simply startActivity with the intent defined in the 
+	 * onCreateOptionsMenu class above.  There really isn't much to see here.
+	 */
     
     public void onClick(View thisView) {
     /**Called when something is clicked in this activity (I think) this checks the ID of what was clicked and does something.**/

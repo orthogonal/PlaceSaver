@@ -8,7 +8,8 @@
 
     <application
         android:icon="@drawable/bogart"
-        android:label="@string/app_name" >
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light" >
         <!-- There are three folders - ldpi (36 x 36), mdpi (48 x 48) and hdpi (72 x 72).  Make an icon for each. -->
         <!-- The icon named "ic_launcher.png" in each folder will be used.  72 x 72 seems to be the most ubiquitous.-->
         <!-- Everything @string is a link to the corresponding value in the res/values/strings.xml file. ~Andrew -->
@@ -33,12 +34,19 @@
         </activity>
         
         <activity
-            android:name=".Help" >
+            android:name=".Help" 
+            android:theme="@android:style/Theme.Dialog">
             
         </activity>
         
         <activity
             android:name=".About" >
+            
+        </activity>
+        
+        <activity
+            android:name=".Nothing"
+            android:theme="@android:style/Theme.Dialog" >
             
         </activity>
     </application>

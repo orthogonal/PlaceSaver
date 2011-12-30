@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/do_nothing"
+        android:title="@string/doNothing"
+        android:alphabeticShortcut="@string/doNothing_shortcut"
+        android:orderInCategory="1"
+        >
+<!-- This defines one button on the menu that pops up at the bottom of the screen.  It should be pretty self-explanatory. -->
+<!-- Make sure you do "title" and not "text" though.  I wrote "text" impulsively and it tripped me up for twenty minutes. -->
+<!-- Menus are linked to the onCreateOptionsMenu method in the Main Activity, which is linked to onOptionsItemSelected. -->
+    </item>
+
+</menu>

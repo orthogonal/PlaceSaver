@@ -15,18 +15,24 @@ public final class R {
         public static final int ic_launcher=0x7f020001;
     }
     public static final class id {
-        public static final int mainAboutButton=0x7f050004;
-        public static final int mainHelpButton=0x7f050003;
-        public static final int mainNewButton=0x7f050002;
-        public static final int mainOldButton=0x7f050001;
-        public static final int oldRemindersText=0x7f050000;
+        public static final int do_nothing=0x7f060006;
+        public static final int mainAboutButton=0x7f060004;
+        public static final int mainHelpButton=0x7f060003;
+        public static final int mainNewButton=0x7f060002;
+        public static final int mainOldButton=0x7f060001;
+        public static final int nothing_message=0x7f060005;
+        public static final int oldRemindersText=0x7f060000;
     }
     public static final class layout {
         public static final int about=0x7f030000;
         public static final int help=0x7f030001;
         public static final int main=0x7f030002;
         public static final int newreminder=0x7f030003;
-        public static final int oldreminders=0x7f030004;
+        public static final int nothing=0x7f030004;
+        public static final int oldreminders=0x7f030005;
+    }
+    public static final class menu {
+        public static final int backmenu=0x7f050000;
     }
     public static final class string {
         public static final int aboutText=0x7f040009;
@@ -35,8 +41,11 @@ public final class R {
         public static final int button_help=0x7f040004;
         public static final int button_new=0x7f040003;
         public static final int button_old=0x7f040002;
+        public static final int doNothing=0x7f04000b;
+        public static final int doNothing_shortcut=0x7f04000c;
         public static final int helpText=0x7f040008;
         public static final int newReminderText=0x7f040007;
+        public static final int nothingText=0x7f04000a;
         public static final int oldRemindersText=0x7f040006;
         public static final int title=0x7f040001;
     }
