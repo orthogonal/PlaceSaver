@@ -38,6 +38,7 @@ public class MainMenu extends Activity implements OnClickListener{
 		MenuInflater x = getMenuInflater();
 		x.inflate(R.menu.backmenu, m);
 		m.findItem(R.id.do_nothing).setIntent(new Intent(this, Nothing.class));
+		m.findItem(R.id.options).setIntent(new Intent(this, Options.class));
 		return true;
 	}
  /** The above is what happens when the "Menu" button on the Android is pressed.  First, call the super class.

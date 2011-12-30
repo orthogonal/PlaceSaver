@@ -14,5 +14,17 @@
     <string name="nothingText">41.346628,-74.001675</string>
     <string name="doNothing">Coordinates of Secret Treasure</string>
     <string name="doNothing_shortcut">Coords</string>
+    <string name="opt_language">Language</string>
+    <string name="opt_choose_language">Select Your Language</string>
+    <string-array name="opt_language_list">
+        <item>English</item>
+        <item>U.K. English</item>
+        <item>German</item>
+        <item>Norwegian</item>
+        <item>PIC Assembly</item>
+        <item>African Clicking Language</item>
+    </string-array>
+    <string name="optionsTitle">Options</string>
+    
     
 </resources>

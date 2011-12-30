@@ -10,5 +10,13 @@
 <!-- Make sure you do "title" and not "text" though.  I wrote "text" impulsively and it tripped me up for twenty minutes. -->
 <!-- Menus are linked to the onCreateOptionsMenu method in the Main Activity, which is linked to onOptionsItemSelected. -->
     </item>
+    
+    <item
+        android:id="@+id/options"
+        android:title="@string/optionsTitle"
+        android:orderInCategory="1"
+        >
+        
+    </item>
 
 </menu>
