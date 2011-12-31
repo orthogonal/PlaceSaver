@@ -13,7 +13,6 @@ import com.google.android.maps.OverlayItem;
 import android.graphics.Canvas;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 
 public class Maps1 extends MapActivity{ 
@@ -22,6 +21,9 @@ public class Maps1 extends MapActivity{
 	/**A MapView is one interactive map.  So we declare this as an object of the entire class since it's going to be used
 	 * in a lot of different methods in this MapActivity.
 	 */
+	
+	private ArrayList<OverlayItem> locations = new ArrayList<OverlayItem>();
+	/**locations is a collection of points.**/
 	
 	@Override
 	public void onCreate(Bundle savedInstanceState){
@@ -51,8 +53,6 @@ public class Maps1 extends MapActivity{
 		GeoPoint pt = new GeoPoint(38914887, -94640821);
 		int latSpan = funPlaces.getLatSpanE6();
 		int lonSpan = funPlaces.getLonSpanE6();
-		Log.v("Overlays", "Lat span is " + latSpan);
-		Log.v("Overlays", "Lon span is " + lonSpan);
 		
 		MapController mc = mapView.getController();
 		mc.setCenter(pt);
@@ -101,8 +101,6 @@ public class Maps1 extends MapActivity{
 		/**The Overlay class itself defines the contract for an overlay, so you can't instantiate it.
 		*ItemizedOverlay is an implementation that is oriented for the creation of new items in the manner we want.
 		**/
-		private ArrayList<OverlayItem> locations = new ArrayList<OverlayItem>();
-		/**locations is a collection of points.**/
 		
 		public InterestingLocations(Drawable marker)
 		{
@@ -120,6 +118,12 @@ public class Maps1 extends MapActivity{
 			/**populate() caches any OverlayItems.  It first calls the size() method to determine the number of items,
 			*and then goes into a loop using that information to call createItem(i) for each item.  
 			**/
+		}
+		
+		public boolean onTap(GeoPoint p, MapView mapView){
+			locations.add(new OverlayItem(p, "Point 3", "Point 3"));
+			populate();
+			return false;
 		}
 		
 		@Override
