@@ -10,6 +10,8 @@ import com.google.android.maps.MapController;
 import com.google.android.maps.MapView;
 import com.google.android.maps.OverlayItem;
 
+import android.app.AlertDialog;
+import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
@@ -43,7 +45,7 @@ public class Maps1 extends MapActivity{
 		 */
 		
 		
-		InterestingLocations funPlaces = new InterestingLocations(marker);
+		InterestingLocations funPlaces = new InterestingLocations(marker, this);
 		mapView.getOverlays().add(funPlaces);
 		/**This adds the overlay defined in the private class below.
 		 * First, it instantiates the overlay.  This will call the constructor, which adds the two points in it.
@@ -102,11 +104,13 @@ public class Maps1 extends MapActivity{
 		*ItemizedOverlay is an implementation that is oriented for the creation of new items in the manner we want.
 		**/
 		
-		public InterestingLocations(Drawable marker)
-		{
+		Context mContext;
+		public InterestingLocations(Drawable marker, Context context){
 			/**This is the constructor for this class.  It creates a couple points and then calls populate() to add them.  **/
 			
 			super(marker);
+			
+			mContext = context;
 			
 			GeoPoint point = new GeoPoint(38914887, -94640801);
 			GeoPoint point2 = new GeoPoint(38914900, -94640821);
@@ -120,10 +124,27 @@ public class Maps1 extends MapActivity{
 			**/
 		}
 		
+		/**This method adds a new item whenever anyone clicks on the map.  It's onTap so when they're just moving the map
+		 * nothing happens.
+		 */
 		public boolean onTap(GeoPoint p, MapView mapView){
+			if (super.onTap(p, mapView))
+					return true;
+			
 			locations.add(new OverlayItem(p, "Point 3", "Point 3"));
 			populate();
 			return false;
+		}
+		
+		
+		@Override
+		protected boolean onTap(int index) {
+		  OverlayItem item = locations.get(index);
+		  AlertDialog.Builder dialog = new AlertDialog.Builder(mContext);
+		  dialog.setTitle(item.getTitle());
+		  dialog.setMessage(item.getSnippet());
+		  dialog.show();
+		  return true;
 		}
 		
 		@Override
