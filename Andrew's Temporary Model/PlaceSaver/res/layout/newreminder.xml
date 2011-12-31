@@ -6,7 +6,7 @@
     >
     
     <TextView
-        android:id="@+id/oldRemindersText"
+        android:id="@+id/newRemindersText"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:gravity="left"

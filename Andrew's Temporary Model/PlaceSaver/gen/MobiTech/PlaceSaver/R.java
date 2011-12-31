@@ -19,17 +19,23 @@ public final class R {
         public static final int redflag=0x7f020002;
     }
     public static final class id {
-        public static final int do_nothing=0x7f080009;
+        public static final int do_nothing=0x7f08000f;
         public static final int mainAboutButton=0x7f080005;
         public static final int mainHelpButton=0x7f080004;
         public static final int mainMapButton=0x7f080001;
         public static final int mainNewButton=0x7f080003;
         public static final int mainOldButton=0x7f080002;
-        public static final int mapView=0x7f080006;
-        public static final int nothing_message=0x7f080008;
+        public static final int mapview=0x7f08000c;
+        public static final int newRemindersText=0x7f08000d;
+        public static final int normal=0x7f08000b;
+        public static final int nothing_message=0x7f08000e;
         public static final int oldRemindersText=0x7f080000;
-        public static final int options=0x7f08000a;
-        public static final int zoom=0x7f080007;
+        public static final int options=0x7f080010;
+        public static final int sat=0x7f080008;
+        public static final int street=0x7f080009;
+        public static final int traffic=0x7f08000a;
+        public static final int zoomin=0x7f080006;
+        public static final int zoomout=0x7f080007;
     }
     public static final class layout {
         public static final int about=0x7f030000;

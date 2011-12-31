@@ -1,0 +1,130 @@
+[33mcommit 79905c854cb4c77e4d05157ec3396b39efb25271[m
+Author: Andrew Latham <acl68@case.edu>
+Date:   Fri Dec 30 17:08:50 2011 -0500
+
+    Better flag picture.
+
+[33mcommit 151c8b5e05b0d3521d233885af23ddeba0605e50[m
+Author: Andrew Latham <acl68@case.edu>
+Date:   Fri Dec 30 16:22:01 2011 -0500
+
+    I went through the Google Maps tutorial on Google's website which, by the way, is awful.
+    There's still a part I'm confused on, and my question about it has gone unanswered on StackOverflow for the last hour.
+    But now you can zoom in and out on the map, and add items at locations on the map.
+    I drew my own flag with a transparent background in Paint .net.  If you load up the app, go to Kansas, and there's a flag at the Starbucks I hang out in.
+    When you click on the flag, it pops up a dialog box.  The next step is making it pop up an option to add a reminder, which is going to involve the database.
+
+[33mcommit b9d5733dc80b623b236bfdb999b3c0f5f08457cb[m
+Author: Andrew Latham <acl68@case.edu>
+Date:   Fri Dec 30 12:51:09 2011 -0500
+
+    Google Maps!!!
+    It's there.  It doesn't do anything yet, but it's there.
+    This was actually fairly difficult.  Eclipse and Google joined forces to fight me every step of the way.
+
+[33mcommit a0d40a17d116b7773d34725e1276b0d4463656e5[m
+Author: Andrew Latham <acl68@case.edu>
+Date:   Fri Dec 30 00:11:54 2011 -0500
+
+    Added a button to go to the place where I'm going to be working on the map.
+    Right now it's just a tease that opens a new Activity for the main menu.
+
+[33mcommit 17d52891910eee110148cbdd3f582037e5db07a3[m
+Author: Andrew Latham <acl68@case.edu>
+Date:   Thu Dec 29 23:06:26 2011 -0500
+
+    Random new document - testing collaboration
+
+[33mcommit 96fdf590dd71f34bbf2dd0a6cad46353c825ed9e[m
+Author: Andrew Latham <acl68@case.edu>
+Date:   Thu Dec 29 22:19:32 2011 -0500
+
+    Added an Options menu where you can select a language.  It's just there for fun, and to show that side of Android.
+    The language you select gets saved.
+
+[33mcommit dfd0217500a026eaad7a69fbc879fc640f37e972[m
+Author: Andrew Latham <acl68@case.edu>
+Date:   Thu Dec 29 21:34:14 2011 -0500
+
+    I added a menu.  You access it by pressing the "Menu" button on the emulator.
+
+[33mcommit da8fb2d64be0d09e169c31cc4851d21bf847634b[m
+Author: Andrew Latham <acl68@case.edu>
+Date:   Thu Dec 29 16:58:34 2011 -0500
+
+    Complete GUI skeleton, I think.
+    ~Andrew
+
+[33mcommit cbc32254f0eeeb1e81ce3579eb8d81df686b05f0[m
+Author: Andrew Latham <acl68@case.edu>
+Date:   Thu Dec 29 16:29:32 2011 -0500
+
+    I added icons and implemented them.
+    They're Humphrey Bogart's face.
+
+[33mcommit 622023bdf88318c5830c26570fd37a46bc3e3f78[m
+Author: Andrew Latham <acl68@case.edu>
+Date:   Thu Dec 29 16:19:21 2011 -0500
+
+    Added Andrew's temporary project (Problems going between Eclipse and NetBeans)
+    It has some GUI.
+
+[33mcommit 737bf759a5b358e94486f3b6b4ba7bc816bce1fd[m
+Author: wbw20 <wbw20@case.edu>
+Date:   Tue Dec 27 23:39:20 2011 -0800
+
+    started working on Reminders
+
+[33mcommit 917e5bd137baa6c154f44b19532dddea19b9122a[m
+Author: wbw20 <wbw20@case.edu>
+Date:   Mon Dec 26 23:48:33 2011 -0800
+
+    Added more Location managing stuff and layed groundwork for the heavy lifting
+
+[33mcommit aebf570f1b07aff9563ed96c24115a65ef247740[m
+Author: wbw20 <wbw20@case.edu>
+Date:   Mon Dec 26 15:13:13 2011 -0800
+
+    added a function to see which of two Locations is better
+
+[33mcommit 1876581f25d42e4605ebcdeaa97b446894c3a38e[m
+Author: wbw20 <wbw20@case.edu>
+Date:   Mon Dec 26 10:12:09 2011 -0800
+
+    added a function to find better location
+
+[33mcommit 170552c25389f57b57e0d06b96aa27972fc26767[m
+Author: wbw20 <wbw20@case.edu>
+Date:   Sun Dec 25 23:56:44 2011 -0800
+
+    removed Location due to redundandy, begining pseudocoding
+
+[33mcommit a276886954cf9e6f88f97dabfb278a6d0532af82[m
+Author: wbw20 <wbw20@case.edu>
+Date:   Sun Dec 25 18:13:48 2011 -0800
+
+    Added Location and Reminder classes
+
+[33mcommit b6c3c00148a14082a98ea798ca253438fda2b292[m
+Author: wbw20 <wbw20@case.edu>
+Date:   Sat Dec 24 12:59:11 2011 -0800
+
+    removed errors from LocationService, updated manifest
+
+[33mcommit 81ea72ac4fbd196b8c2bf55a96507bf8e70015b1[m
+Author: unknown <Will@.(none)>
+Date:   Sat Dec 24 12:36:38 2011 -0800
+
+    Added the first service class, which doesn't work yet
+
+[33mcommit 9c66209a96c8f46b97cdabc38d572de09cc47f59[m
+Author: unknown <Will@.(none)>
+Date:   Fri Dec 23 16:49:35 2011 -0800
+
+    Updated comments for javadoc
+
+[33mcommit 2141d81fd3a3bd27928db27af86be11e8787ea87[m
+Author: unknown <Will@.(none)>
+Date:   Fri Dec 23 16:39:56 2011 -0800
+
+    Place Saver by William B. Wettersten and Andrew Latham.
