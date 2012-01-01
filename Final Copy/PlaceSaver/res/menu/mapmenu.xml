@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu 
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <item 
+        android:id="@+id/mapmenu_satellite"
+        android:title="@string/mapmenu_satellite"
+        android:orderInCategory="3"
+        >
+    </item>
+    <item
+        android:id="@+id/mapmenu_normal"
+        android:title="@string/mapmenu_normal"
+        android:orderInCategory="2"
+        >
+    </item>
+    <item
+        android:id="@+id/mapmenu_manage"
+        android:title="@string/mapmenu_manage"
+        android:orderInCategory="1"
+        >
+    </item>
+</menu>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PlaceSaver</string>
+    <string name="mapmenu_satellite">Satellite</string>
+    <string name="mapmenu_normal">Normal</string>
+    <string name="mapmenu_manage">Manage Reminders</string>
+
+</resources>
