@@ -10,6 +10,7 @@ import com.google.android.maps.MapView;
 import com.google.android.maps.OverlayItem;
 import android.app.AlertDialog;
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Canvas;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
@@ -134,6 +135,8 @@ public class PlaceSaverActivity extends MapActivity{
 		super.onOptionsItemSelected(item1);
 		switch (item1.getOrder()){
 		case 1:
+			Intent manage = new Intent(this, Manage.class);
+			startActivity(manage);
 			break;
 		case 2:
 			theMap.setSatellite(false);
