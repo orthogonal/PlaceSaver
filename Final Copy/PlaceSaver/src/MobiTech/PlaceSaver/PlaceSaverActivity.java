@@ -15,6 +15,7 @@ import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 
 public class PlaceSaverActivity extends MapActivity{ 
@@ -128,6 +129,21 @@ public class PlaceSaverActivity extends MapActivity{
 		x.inflate(R.menu.mapmenu, menu1);
 		return true;
 	}
+	@Override
+	public boolean onOptionsItemSelected (MenuItem item1) {
+		super.onOptionsItemSelected(item1);
+		switch (item1.getOrder()){
+		case 1:
+			break;
+		case 2:
+			theMap.setSatellite(false);
+			break;
+		case 3:
+			theMap.setSatellite(true);
+			break;
+		}
+		return true;
+	}
 
-
+	
 }
