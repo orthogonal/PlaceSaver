@@ -31,6 +31,18 @@
             
         </activity>
         
+        <activity
+            android:name=".NewReminder"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" >
+            
+        </activity>
+        
+        <activity
+            android:name=".OldReminder"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" >
+            
+        </activity>
+        
     </application>
     
     <uses-permission android:name="android.permission.INTERNET" />
