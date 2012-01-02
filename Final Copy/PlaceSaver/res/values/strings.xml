@@ -5,5 +5,17 @@
     <string name="mapmenu_satellite">Satellite</string>
     <string name="mapmenu_normal">Normal</string>
     <string name="mapmenu_manage">Manage Reminders</string>
+    <string name="old_name_text">null</string>
+    <string name="old_reminder_text">null</string>
+    <string name="old_name_header">Title</string>
+    <string name="old_reminder_header">Message</string>
+    <string name="old_save">Save</string>
+    <string name="old_cancel">Cancel</string>
+    <string name="new_name_header">Title</string>
+    <string name="new_name_hint">A title for this place</string>
+    <string name="new_reminder_header">Message</string>
+    <string name="new_reminder_hint">Reminder Message</string>
+    <string name="new_save">Save</string>
+    <string name="new_cancel">Cancel</string>
 
 </resources>

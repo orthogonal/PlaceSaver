@@ -20,6 +20,9 @@ import android.view.MenuItem;
 import android.view.View;
 
 public class PlaceSaverActivity extends MapActivity{ 
+	
+    Intent openOnFlag;
+    Intent openOnTap;
 
 	private MapView theMap;
 	/**A MapView is one interactive map.  So we declare this as an object of the entire class since it's going to be used
@@ -40,6 +43,9 @@ public class PlaceSaverActivity extends MapActivity{
 		theMap.displayZoomControls(true);
 		//** Enable the zoom at the bottom of the screen **/
        
+		openOnFlag = new Intent(this, OldReminder.class);
+		openOnTap = new Intent(this, NewReminder.class);
+		 
 		Drawable flagPic = getResources().getDrawable(R.drawable.redflag);
 		flagPic.setBounds((int)(-flagPic.getIntrinsicWidth()/2), -flagPic.getIntrinsicHeight(), (int)(flagPic.getIntrinsicWidth()/2), 0);
 		/**These two lines set up the flag for use with an ItemizedOverlay.  
@@ -95,17 +101,22 @@ public class PlaceSaverActivity extends MapActivity{
 			if (super.onTap(p, mapView))
 					return true;
 			
-			flags.add(new OverlayItem(p, "Point 3", "Point 3"));
-			populate();
+			startActivity(openOnTap);
+			
+			/*flags.add(new OverlayItem(p, "Point 3", "Point 3"));
+			populate();*/
 			return false;
 		}
 		@Override
 		protected boolean onTap(int index) {
-		  OverlayItem item = flags.get(index);
+		  
+			startActivity(openOnFlag);
+		  
+		  /*OverlayItem item = flags.get(index);
 		  AlertDialog.Builder dialog = new AlertDialog.Builder(context);
 		  dialog.setTitle(item.getTitle());
 		  dialog.setMessage(item.getSnippet());
-		  dialog.show();
+		  dialog.show();*/
 		  return true;
 		}
 		@Override

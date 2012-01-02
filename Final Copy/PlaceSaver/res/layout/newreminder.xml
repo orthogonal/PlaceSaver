@@ -2,7 +2,58 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/old_name_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/new_name_header"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
     
+    <EditText
+        android:id="@+id/old_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/new_name_hint"
+        android:lines="1"
+        />
+
+    <TextView
+        android:id="@+id/old_reminder_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/new_reminder_header"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+    
+    <EditText
+        android:id="@+id/old_reminder"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/new_reminder_hint"
+        android:lines="8"
+        />
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:stretchColumns="1"
+        android:paddingTop="40dp" >
+            <Button
+                android:id="@+id/new_save"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/new_save"
+                />
+            <Button 
+                android:id="@+id/new_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/new_cancel"
+                />
+    </TableLayout>
 
 </LinearLayout>
